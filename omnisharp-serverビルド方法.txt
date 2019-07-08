@@ -1,0 +1,11 @@
+ここからダウンロードする
+https://github.com/OmniSharp/omnisharp-server
+
+ビルド方法
+git clone https://github.com/OmniSharp/omnisharp-server.git
+    cd omnisharp-server
+    git submodule update --init --recursive
+
+    # (if using Cygwin, overwrite the default config file config.json with config-cygwin.json)
+    copy OmniSharp\config-cygwin.json OmniSharp\config.json
+    msbuild
